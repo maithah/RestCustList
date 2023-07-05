@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{title}}</mat-card-title>
+    <mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
+
+    <div class="mat-action-buttons">
+      <ng-content select=".app-card-actions"></ng-content>
+
+    </div>
+
+    <div class="mat-action-button">
+      <ng-content select=".app-card-action"></ng-content>
+
+    </div>
+  </mat-card-header><br>
+
+  <mat-card-content>
+
+    <ng-content></ng-content>
+
+  </mat-card-content>
+</mat-card>
